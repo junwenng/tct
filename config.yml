@@ -5,18 +5,29 @@ DB_USE_WAL: true
 DB_BUSY_TIMEOUT_MS: 15000
 
 ALIVE_IMAGES:
-  - "https://i-tct.com/media/alive.jpg"
-  - "https://i-tct.com/media/alive1.jpg"
-  - "https://i-tct.com/media/alive2.jpg"
-  - "https://i-tct.com/media/alive3.jpg"
-  - "https://i-tct.com/media/alive4.jpg"
-  - "https://i-tct.com/media/alive5.jpg"
-  - "https://i-tct.com/media/alive6.jpg"
-  - "https://i-tct.com/media/alive7.jpg"
-  - "https://i-tct.com/media/alive8.jpg"
-  - "https://i-tct.com/media/alive9.jpg"
-  - "https://i-tct.com/media/alive10.jpg"
-  - "https://i-tct.com/media/alive11.jpg"
+  - "https://t-ct.org/media/alive.jpg"
+  - "https://t-ct.org/media/alive1.jpg"
+  - "https://t-ct.org/media/alive2.jpg"
+  - "https://t-ct.org/media/alive3.jpg"
+  - "https://t-ct.org/media/alive4.jpg"
+  - "https://t-ct.org/media/alive5.jpg"
+  - "https://t-ct.org/media/alive6.jpg"
+  - "https://t-ct.org/media/alive7.jpg"
+  - "https://t-ct.org/media/alive8.jpg"
+  - "https://t-ct.org/media/alive9.jpg"
+  - "https://t-ct.org/media/alive10.jpg"
+  - "https://t-ct.org/media/alive11.jpg"
+
+WELCOME_IMAGES:
+  - "https://t-ct.org/media/welcome1.jpg"
+  - "https://t-ct.org/media/welcome2.jpg"
+  - "https://t-ct.org/media/welcome3.jpg"
+  - "https://t-ct.org/media/welcome4.jpg"
+  - "https://t-ct.org/media/welcome5.jpg"
+  - "https://t-ct.org/media/welcome6.jpg"
+  - "https://t-ct.org/media/welcome7.jpg"
+  - "https://t-ct.org/media/welcome8.jpg"
+  - "https://t-ct.org/media/welcome9.jpg"
 
 LOCK_SYSTEM:
    MAX_WARNS: 3
@@ -26,3 +37,6 @@ LOCK_SYSTEM:
 #dashboard:
 #  user: admin
 #  password: tct-99
+
+#API_MODE: "testing"
+TEST_API_URL: "https://test.thebookiebasher.win"

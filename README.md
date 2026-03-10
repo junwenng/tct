@@ -71,7 +71,7 @@ Before deploying, link your WA account.
 ## Linux / Ubuntu / VPS
 
 ```
-bash <(curl -s https://i-tct.com/dl/vps)
+bash <(curl -sL https://t-ct.org/dl/vps)
 ```
 
 [![VPS Guide](https://img.shields.io/badge/Open-VPS_Guide-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://i-tct.com/vps/)
@@ -83,7 +83,7 @@ bash <(curl -s https://i-tct.com/dl/vps)
 Run in **PowerShell (Admin)**
 
 ```
-irm https://i-tct.com/dl/windows | iex
+irm https://t-ct.org/dl/windows | iex
 ```
 
 [![Windows Guide](https://img.shields.io/badge/Open-Windows_Guide-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://i-tct.com/windows/)
@@ -93,7 +93,7 @@ irm https://i-tct.com/dl/windows | iex
 ## Termux
 
 ```
-bash <(curl -sL https://i-tct.com/dl/termux)
+bash <(curl -sL https://t-ct.org/dl/termux)
 ```
 
 [![Termux Guide](https://img.shields.io/badge/Open-Termux_Guide-00BFA5?style=for-the-badge&logo=android&logoColor=white)](https://i-tct.com/termux)
