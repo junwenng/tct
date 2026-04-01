@@ -7,23 +7,40 @@
 SESSION_ID: "tct_xxxxx"
 TIMEZONE: "Africa/Nairobi"
 FILTER_NOISE_LOGS: true # Clean up console output
+
 # --- Server / Deployment ---
 # The port the web dashboard runs on
 SERVER_PORT: 3003
+
 #UNIX_SOCKET_PATH: "/tmp/my_app_1.sock" # Uncomment if using IPC sockets and if you don't know leave it commented
+
 # --- API Keys (Optional) ---
 #OPENWEATHER_API_KEY: "" # Needed for weather commands , only uncomment if there is an actual key
 #MISTRAL_API_KEY: "" # Needed for AI Chatbot commands (not used for now)
+
 # --- Database Settings ---
 DATABASE:
+  # ------------------------------------------------------------------
+  # SYNC_MODE: Controls how fast the bot writes to the database.
+  # If your bot is lagging, hanging, or CPU usage is high, change this.
+  # 
+  # Options:
+  #   "OFF"    - Maximum Speed (God Mode). Instantly fixes lag on heavy 
+  #              bots. Slight risk of DB corruption if the VPS/Server 
+  #              completely loses power unexpectedly.
+  #   "NORMAL" - Balanced (Default). Good speed, safe from bot crashes.
+  #   "FULL"   - Maximum Safety. Very slow, not recommended for busy bots.
+  # ------------------------------------------------------------------
+  SYNC_MODE: "NORMAL"
   BATCH_SIZE: 300
   FLUSH_INTERVAL: "5000" # milliseconds or duration string like "5s"
   CACHE_MAX_BYTES: 134217728 # 128MB
   USE_WAL: true
   BUSY_TIMEOUT_MS: 15000
+
 # --- Web Dashboard ---
 DASHBOARD:
-  ENABLED: false
+  ENABLED: true
   USER: "admin"
   PASSWORD: "tct-99"
 # --- Cloudinary (For URL uploads) ---
@@ -32,12 +49,14 @@ DASHBOARD:
 #  API_KEY: ""
 #  API_SECRET: ""
 # --- Lock System ---
+
 LOCK_SYSTEM:
   MAX_WARNS: 3
   WARN_MESSAGE: "*⚠️WARN MESSAGE⚠️*\n\n*USER:* {user}\n*MAX WARNINGS:* {max_warns}\n*REMAINING WARNINGS:* {remaining_warns}\n*REASON:* {reason}"
   DEFAULT_REASON: "Breaking group rules."
   SHOW_TRIGGER_IN_REASON: true
   DELETE_WARN_AFTER: 3 # Minutes
+
 # --- Media Assets ---
 ALIVE_IMAGES:
   - "https://t-ct.org/media/alive.jpg"
@@ -63,7 +82,6 @@ WELCOME_IMAGES:
   - "https://t-ct.org/media/welcome8.jpg"
   - "https://t-ct.org/media/welcome9.jpg"
 PREFIX: "."
-
-# Don't chamge this unless you know what you are doing
-HTTP_PROXY: "none"
-HTTPS_PROXY: "none"
+# Don't change this unless you know what you are doing
+#HTTP_PROXY: "none"
+#HTTPS_PROXY: "none"
